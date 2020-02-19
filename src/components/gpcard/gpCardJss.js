@@ -45,7 +45,7 @@ const gpCardJss = theme => ({
             },
             "& $diagTextDate":{
                 
-                animationName: '$addShadow',
+                animationName: '$addShadowDate',
                 animationDuration: '0.5s',
                 animationTimingFunction: 'linear',
                 animationIterationCount: 1,
@@ -79,7 +79,7 @@ const gpCardJss = theme => ({
             },
             "& $diagTextDate":{
                 
-                animationName: '$addShadow',
+                animationName: '$addShadowDate',
                 animationDuration: '0.5s',
                 animationTimingFunction: 'linear',
                 animationIterationCount: 1,
@@ -94,17 +94,14 @@ const gpCardJss = theme => ({
         fontSize: "1.1rem",
         marginRight: "50px",
         paddingTop: "10px",
-        textShadow: "-0.09rem 0.09rem 0px rgba(50,50,50,1), -0.18rem 0.18rem 0px rgba(100,100,100,1)"
+        textShadow: "-0.00rem 0.09rem 0px rgba(0,0,0,1), 0.00rem -0.03rem 0px rgba(0,0,0,1),-0.00rem 0.09rem 0px rgba(50,50,50,1), -0.00rem 0.18rem 0px rgba(100,100,100,1)"
     },
     cardHead: {
         margin: "-1rem",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        // backgroundColor: "#000"
-        "&:hover": {
-            
-        },
+        
     },
     diagTextName: {
         color: theme.palette.text,
@@ -112,7 +109,7 @@ const gpCardJss = theme => ({
         marginLeft: "50px",
         fontSize: "1.1rem",
         paddingTop: "10px",
-        textShadow: "-0.09rem 0.09rem 0px rgba(50,50,50,1), -0.18rem 0.18rem 0px rgba(100,100,100,1)"
+        textShadow: "-0.00rem 0.09rem 0px rgba(0,0,0,1), 0.00rem -0.03rem 0px rgba(0,0,0,1),-0.00rem 0.09rem 0px rgba(50,50,50,1), -0.00rem 0.18rem 0px rgba(100,100,100,1)"
 
     },
     cardCont: {
@@ -138,10 +135,15 @@ const gpCardJss = theme => ({
         "0%" : {opacity: 0},
         "100%" : {opacity: 1},
     },
+    '@keyframes addShadowDate': {
+        "0%" : {opacity: 0, textShadow: "-0.0rem 0.03rem 0px rgba(0,0,0,1), 0.0rem -0.03rem 0px rgba(0,0,0,1),-0.0rem 0.09rem 0px rgba(50,50,50,1), -0.0rem 0.18rem 0px rgba(100,100,100,1)",},
+        
+        "100%" :{opacity: 1, textShadow: "-0.0rem 0.01rem 0px rgba(0,0,0,1), 0.0rem -0.04rem 0px rgba(0,0,0,1),-0.0rem 0.10rem 0px rgba(50,50,50,1) ,-0.0rem 0.15rem 0px rgba(255,0,100,1), -0.0rem 0.20rem 0px rgba(0,255,200,1)",},
+    },
     '@keyframes addShadow': {
-        "0%" : {textShadow: "-0.09rem 0.09rem 0px rgba(50,50,50,1), -0.18rem 0.18rem 0px rgba(100,100,100,1)",},
-        "50%" : {textShadow: "-0.04rem 0.04rem 0px rgba(50,50,50,1) ,-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(255,0,100,1),",},
-        "100%" :{textShadow: "-0.04rem 0.04rem 0px rgba(50,50,50,1) ,-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(255,0,100,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",},
+        "0%" : { textShadow: "-0.0rem 0.03rem 0px rgba(0,0,0,1), 0.0rem -0.03rem 0px rgba(0,0,0,1),-0.0rem 0.09rem 0px rgba(50,50,50,1), -0.0rem 0.18rem 0px rgba(100,100,100,1)",},
+        
+        "100%" :{ textShadow: "-0.0rem 0.01rem 0px rgba(0,0,0,1), 0.0rem -0.04rem 0px rgba(0,0,0,1),-0.0rem 0.10rem 0px rgba(50,50,50,1) ,-0.0rem 0.15rem 0px rgba(255,0,100,1), -0.0rem 0.20rem 0px rgba(0,255,200,1)",},
     },
 
 })

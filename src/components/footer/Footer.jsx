@@ -3,8 +3,12 @@ import React, { Component } from "react";
 import footerJss from "./footerJss";
 
 import {
-    withStyles,
+    withStyles, Typography, Link, IconButton 
 } from "@material-ui/core/";
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+
+
 
 class Footer extends Component {
 
@@ -16,9 +20,21 @@ class Footer extends Component {
         const {classes} = this.props;
 
         return(
-             <div className={classes.root}>
-                
-            </div>
+             <footer className={classes.root}>
+                 <footer className={classes.link}>
+                 
+                    <a
+                        target="_blank"
+                        href={"https://github.com/CodeRacoon"}
+                    >
+                        <IconButton className={classes.gitButton} aria-label="link">
+                            <GitHubIcon />
+                        </IconButton>
+                    </a>
+                    <h6>Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV.</h6>
+                 </footer>
+                 
+            </footer>
         );
     }
 }

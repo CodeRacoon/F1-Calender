@@ -53,7 +53,7 @@ class Content extends Component {
                 <div className={c.nextDiv}>
 
                     <Typography className={c.headerText} variant="h5" component="h5">
-                        Upcoming Grand Prix
+                        Grand Prix
                     </Typography>
 
                     {this.state.data.map(i => (

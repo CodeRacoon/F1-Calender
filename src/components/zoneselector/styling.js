@@ -31,20 +31,20 @@ const zoneJss = theme => ({
 
     },
     '@keyframes retractShadow': {
-        "0%" : {textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",},
-        "50% " :{textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1)",},
-        "100%" : {textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1)",},
+        "0%" : {textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",},
+        "50% " :{textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1)",},
+        "100%" : {textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1)",},
     },
     '@keyframes retractShadow2': {
-        "0%" : {textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1)",},
-        "50%" : {textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1),",},
-        "100%" :{textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",},
+        "0%" : {textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1)",},
+        "50%" : {textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1),",},
+        "100%" :{textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",},
     },
     zoneHeader: {
         ...gpFont,
         //padding: "2rem",
         marginBottom: "1rem",
-        textShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",
+        textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1), -0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",
         fontWeight: "bold",
         animationName: '$retractShadow2',
         animationDuration: '0.5s',

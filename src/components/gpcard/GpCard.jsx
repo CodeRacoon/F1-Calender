@@ -84,9 +84,9 @@ class GpCard extends Component {
                             </CardContent>
                             <CardContent className={c.cardCont2}>
                                 
-                                    <h4 >Winners:</h4>
+                                    <h4 className={c.sessionText}>Winners:</h4>
                                 {d.winners.map(i => (
-                                    <h4 >{i}</h4>
+                                    <h4 className={c.sessionText}>{i}</h4>
                                 ))}
                             </CardContent>
                         </CardContent>

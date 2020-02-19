@@ -18,7 +18,7 @@ const headerJss = theme => ({
         //backgroundColor: theme.palette.background.default,
         ...logoFont,
         padding: "3rem",
-        textShadow: "0.12rem 0.12rem 0px rgba(0,255,200,1), -0.10rem -0.02rem 0px rgba(255,0,100,1)",
+        textShadow: "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1),0.12rem 0.12rem 0px rgba(0,255,200,1), -0.10rem -0.02rem 0px rgba(255,0,100,1)",
         fontWeight: "bold"
                         
         
