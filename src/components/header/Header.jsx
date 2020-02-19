@@ -4,8 +4,6 @@ import headerJss from "./styling";
 
 import { withStyles, 
     Typography, 
-    Card, 
-    CardHeader ,
     Divider } from "@material-ui/core/";
 
 class Header extends Component {

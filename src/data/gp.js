@@ -139,7 +139,7 @@ export const races = [
         },
         desc: "",
         tickets: "https://motorsporttickets.com/en-gb/f1/netherlands/tickets",
-        winners: [],
+        winners: ["Returning race"],
         extended: false,
     },
     {

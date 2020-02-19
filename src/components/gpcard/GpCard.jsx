@@ -1,20 +1,16 @@
 import React, { Component } from "react";
-import moment from "moment-timezone";
+
 
 import gpCardJss from "./gpCardJss";
 import {gpCardHeader, formatToDisplay, countdown} from "../../data/date";
 
-import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
 import {
     withStyles,
     Card,
-    CardMedia,
-    Paper,
     Collapse,
     CardContent,
-    CardHeader,
     Divider
 } from "@material-ui/core/";
 
@@ -52,7 +48,14 @@ class GpCard extends Component {
              <main className={c.root}>
                 <Card elevation={2} className={d.round % 2 === 0 ? c.color : c.diagCard} onClick={() => this.onExpand(d.round)} onMouseEnter={this.onEnter} onMouseLeave={this.onExit}>
                     <CardContent className={c.cardHead } >
-                        <h1 className={c.diagTextName}>{d.raceName.slice(0, -10) + "GP"}</h1>
+                        {
+                            d.raceName === "Chinese Grand Prix" ? 
+                            <h1 className={c.diagTextName}>{d.raceName.slice(0, -10) + "GP, TBD"}</h1> :
+                            <h1 className={c.diagTextName}>{d.raceName.slice(0, -10) + "GP"}</h1>
+
+                        }
+
+                        
                         {
                             this.state.disabled ? 
                             <h1 className={c.diagTextDate}> {countdown(d.sessions)} </h1> :

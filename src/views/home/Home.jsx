@@ -11,9 +11,7 @@ import homeJss from "./homeJss";
 
 import { 
     withStyles,
-    Divider,
  } from "@material-ui/core/";
-import { render } from "@testing-library/react";
 
 import { races } from "../../data/gp";
 

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import footerJss from "./footerJss";
 
 import {
-    withStyles, Typography, Link, IconButton 
+    withStyles, IconButton 
 } from "@material-ui/core/";
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -25,6 +25,7 @@ class Footer extends Component {
                  
                     <a
                         target="_blank"
+                        rel="noopener noreferrer"
                         href={"https://github.com/CodeRacoon"}
                     >
                         <IconButton className={classes.gitButton} aria-label="link">

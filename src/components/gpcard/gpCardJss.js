@@ -1,4 +1,4 @@
-import { logoFont, gpFont } from "../../styling/defaults";
+import {  gpFont } from "../../styling/defaults";
 
 const gpCardJss = theme => ({
    

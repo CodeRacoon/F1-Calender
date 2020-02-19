@@ -1,9 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import logoFont from "./defaults";
-
-
-
 //Theme generated with
 // https://material.io/inline-tools/color/
 // https://themebuilder.telerik.com/kendo-react-ui
