@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/F1-Calender/static/css/main.db281c63.chunk.css",
+    "main.js": "/F1-Calender/static/js/main.b75b602d.chunk.js",
+    "main.js.map": "/F1-Calender/static/js/main.b75b602d.chunk.js.map",
+    "runtime-main.js": "/F1-Calender/static/js/runtime-main.a3a19146.js",
+    "runtime-main.js.map": "/F1-Calender/static/js/runtime-main.a3a19146.js.map",
+    "static/css/2.cd67af34.chunk.css": "/F1-Calender/static/css/2.cd67af34.chunk.css",
+    "static/js/2.7263c73e.chunk.js": "/F1-Calender/static/js/2.7263c73e.chunk.js",
+    "static/js/2.7263c73e.chunk.js.map": "/F1-Calender/static/js/2.7263c73e.chunk.js.map",
+    "index.html": "/F1-Calender/index.html",
+    "precache-manifest.6ea03d6067abe22e7056fa517902a4b1.js": "/F1-Calender/precache-manifest.6ea03d6067abe22e7056fa517902a4b1.js",
+    "service-worker.js": "/F1-Calender/service-worker.js",
+    "static/css/2.cd67af34.chunk.css.map": "/F1-Calender/static/css/2.cd67af34.chunk.css.map",
+    "static/css/main.db281c63.chunk.css.map": "/F1-Calender/static/css/main.db281c63.chunk.css.map",
+    "static/js/2.7263c73e.chunk.js.LICENSE.txt": "/F1-Calender/static/js/2.7263c73e.chunk.js.LICENSE.txt",
+    "static/media/ep_naturalblack.png": "/F1-Calender/static/media/ep_naturalblack.23e2b6cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3a19146.js",
+    "static/css/2.cd67af34.chunk.css",
+    "static/js/2.7263c73e.chunk.js",
+    "static/css/main.db281c63.chunk.css",
+    "static/js/main.b75b602d.chunk.js"
+  ]
+}
