@@ -2,7 +2,7 @@
   "name": "f1-calendar",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://coderacoon.github.io/F1-Calender",
+  "homepage": "http://coderacoon.github.io/F1-Calender/",
 
   "dependencies": {
     "@material-ui/core": "^4.9.0",

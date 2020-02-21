@@ -69,18 +69,26 @@ class GpCard extends Component {
                         <CardContent className={c.cardCont}>
 
                             <CardContent  className={c.cardCont2}>
-
+                             
                                 <h4 className={c.sessionText}>Practice 1: </h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>Practice 2: </h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>Practice 3: </h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>Qualification: </h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>Race: </h4>
                             </CardContent>
                             <CardContent  className={c.cardCont2}>
                                 <h4 className={c.sessionText}>{formatToDisplay(d.sessions.p1)}</h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>{formatToDisplay(d.sessions.p2)}</h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>{formatToDisplay(d.sessions.p3)}</h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>{formatToDisplay(d.sessions.qualy)}</h4>
+                                <Divider/>
                                 <h4 className={c.sessionText}>{formatToDisplay(d.sessions.race)}</h4>
                             </CardContent>
                             <CardContent className={c.cardCont2}>

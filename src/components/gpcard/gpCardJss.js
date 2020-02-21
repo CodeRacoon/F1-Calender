@@ -4,11 +4,11 @@ const gpCardJss = theme => ({
    
     
     '@keyframes rotateCyan': {
-        "0%" : {boxShadow: "-0.15rem 0.15rem 0px rgba(0,255,200,0.6)"},
+        "0%" : {boxShadow: "-0.09rem 0.09rem 0px rgba(0,255,200,0.3)"},
         "100%" : {boxShadow: "-0.15rem 0.15rem 0px rgba(0,255,200,0.6),0.15rem -0.15rem 0px rgba(0,255,200,0.6)"},
     },
     '@keyframes rotateRose': {
-        "0%" : {boxShadow: "-0.15rem 0.15rem 0px rgba(255,0,100,0.6)"},
+        "0%" : {boxShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,0.3)"},
         "100%" : {boxShadow: "-0.15rem 0.15rem 0px rgba(255,0,100,0.6),0.15rem -0.15rem 0px rgba(255,0,100,0.6)"},
     },
     root: {
@@ -22,7 +22,7 @@ const gpCardJss = theme => ({
     },
     diagCard: {
         background: "rgba(50,0,20,0)",
-        boxShadow: "-0.09rem 0.09rem 0px rgba(0,255,200,0.6)",
+        boxShadow: "-0.09rem 0.09rem 0px rgba(0,255,200,0.3)",
         width: "50vw",
         minWidth: "500px",
         minHeight: "55px",
@@ -60,7 +60,7 @@ const gpCardJss = theme => ({
         borderRadius: "50px 5px 50px 5px",
         marginTop: "10px",
         //background: "rgba(30,40,40,0.7)",
-        boxShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,0.6)",
+        boxShadow: "-0.09rem 0.09rem 0px rgba(255,0,100,0.3)",
         background: "rgba(0,255,200,0.0)",
         "&:hover": {
             
