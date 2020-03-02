@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import clsx from "clsx";
 
-import footerJss from "./footerJss";
+import styling from "./styling";
 
 import {
     withStyles, IconButton 
@@ -17,27 +18,26 @@ class Footer extends Component {
     }
     
     render() {
-        const {classes} = this.props;
+        const c = this.props.classes;
 
         return(
-             <footer className={classes.root}>
-                 <footer className={classes.link}>
+             <footer className={c.Footer}>
+                 <footer className={clsx(c.Footer__link, c.Footer__contents)}>
                  
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
                         href={"https://github.com/CodeRacoon"}
                     >
-                        <IconButton className={classes.gitButton} aria-label="link">
+                        <IconButton className={c.Footer___rgbShadow} aria-label="link">
                             <GitHubIcon />
                         </IconButton>
                     </a>
-                    <h6>Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV.</h6>
+                    <h6>{"Formula One, Formula 1, F1 & Grand Prix are trademarks of Formula One Licensing BV."}</h6>
                  </footer>
-                 
             </footer>
         );
     }
 }
 
-export default withStyles(footerJss)(Footer);
+export default withStyles(styling)(Footer);

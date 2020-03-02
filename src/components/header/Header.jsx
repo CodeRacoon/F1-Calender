@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 
-import headerJss from "./styling";
+import styling from "./styling";
 
-import { withStyles, 
-    Typography, 
-    Divider } from "@material-ui/core/";
+import { withStyles, Divider } from "@material-ui/core/";
+import clsx from "clsx";
 
+/**
+ * @input headline={string}
+ */
 class Header extends Component {
     constructor(props) {
         super();
@@ -15,15 +17,14 @@ class Header extends Component {
         const c = this.props.classes;
 
         return (
-            <header className={c.root}>
-                <Typography className={c.headline} variant="h3" component="h3">
-                    {this.props.headline}
-                    <Divider variant={"fullWidth"} orientation={"horizontal"}/>
-                </Typography>
-                
+            <header className={c.Header}>
+                <h1 className={clsx(c.Header__headLine, c.Header___default)}>
+                    {this.props.headline ? this.props.headline : ""}
+                    <Divider variant={"fullWidth"} orientation={"horizontal"} />
+                </h1>
             </header>
         );
     }
 }
 
-export default withStyles(headerJss)(Header);
+export default withStyles(styling)(Header);

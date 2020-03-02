@@ -1,103 +1,82 @@
-import React, {Component} from "react";
-
-
+import React, { Component } from "react";
 
 import zoneJss from "./styling";
+import SubHeader from "../subheader/SubHeader";
 
-import {
-    withStyles,
-    Paper,
-    Typography
-} from "@material-ui/core/";
+import { withStyles} from "@material-ui/core/";
 
-import Select from 'react-timezone-select'
+import Select from "react-timezone-select";
 
-import {timeOffset} from "../../data/date"
-
+import { timeOffset } from "../../data/date";
+import clsx from "clsx";
 
 class ZoneSelector extends Component {
-
-    constructor(props){
+    constructor(props) {
         super();
         this.changeZone = this.changeZone.bind(this);
         this.selectorChange = this.selectorChange.bind(this);
         this.state = {
             zone: props.zone,
-            selector: true,
-          }
+            selector: true
+        };
     }
 
     changeZone = zone => {
-        this.setState({ 
+        this.setState({
             zone: zone.value,
-            selector: !this.state.selector 
+            selector: !this.state.selector
         });
-        
         this.props.onChange(zone.value);
-        
-        
-        
-    }
+    };
 
-    selectorChange(){
-        if(this.state.selector){
+    selectorChange() {
+        if (this.state.selector) {
             this.setState({
-                selector: !this.state.selector,
+                selector: !this.state.selector
             });
         }
-        
     }
-
-    render(){
-
+    render() {
         const c = this.props.classes;
-        return(             
-            
-            <time className={c.root}
-                
-            >
-                <header 
-                    //onMouseOver={() => console.log("test")}
-                    //onMouseOut={() => console.log("test2")}
-                >
-                    <Typography onClick={this.selectorChange} className={c.zoneHeader} variant="h5" component="h5">
-                        Select Timezone
-                    </Typography>
-                </header>
-                
+        return (
+            <section className={c.ZoneSelector}>
+                <SubHeader
+                    onClick={this.selectorChange}
+                    headline={"Select Timezone"}
+                />
                 <time
-                
-                className={c.selector}
-                onClick={this.selectorChange}       >
-
-                    {
-                        this.state.selector ? 
-                        <Paper
-                            elevation={0}
-                            className={c.selectorOff}
+                    className={clsx(
+                        c.ZoneSelector__inputList,
+                        c.ZoneSelector___black
+                    )}
+                    onClick={this.selectorChange}
+                >
+                    {this.state.selector ? (
+                        <section
+                            className={clsx(
+                                c.ZoneSelector__infoBox,
+                                c.ZoneSelector___white
+                            )}
                         >
-                        <Typography 
-                        className={c.zoneText} 
-                        variant="subtitle1" 
-                        component="h6"
-                        >
-                            {timeOffset(this.state.zone) + " | " + this.state.zone}
-                        </Typography>
-                            
-                        </Paper> : 
-                        <Select 
-                            value={this.state.zone} 
+                            <em
+                                className={clsx(
+                                    c.ZoneSelector__timeText,
+                                    c.ZoneSelector___selectEffect
+                                )}
+                            >
+                                {timeOffset(this.state.zone)}
+                            </em>
+                        </section>
+                    ) : (
+                        <Select
+                            value={this.state.zone}
                             onChange={this.changeZone}
                         />
-                    }
-                    
+                    )}
                 </time>
-                
-                
-            </time>
+            </section>
         );
     }
-
 }
 
 export default withStyles(zoneJss)(ZoneSelector);

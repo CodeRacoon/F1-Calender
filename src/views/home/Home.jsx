@@ -5,7 +5,7 @@ import moment from "moment-timezone";
 import Header from "../../components/header/Header.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import ZoneSelector from "../../components/zoneselector/ZoneSelector.jsx";
-import Content from "../../components/content/Content"
+import GpDisplay from "../../components/gpdisplay/GpDisplay"
 
 import homeJss from "./homeJss";
 
@@ -46,15 +46,10 @@ class Home extends Component {
                 <div className={classes.root}>
                 
                     <Header headline={"Formula 1 calendar 2020"}/>
-                        
-                    
-                    {/*<div className={classes.topDiv2} >
-                        <
-                    </div>*/}
                     
                     <ZoneSelector onChange={this.updateTimezone} zone={this.state.timezone}/>
                     
-                    <Content data={this.state.data} zone={this.state.timezone} />
+                    <GpDisplay data={this.state.data} zone={this.state.timezone} />
                     
                     <Footer />
                 </div>

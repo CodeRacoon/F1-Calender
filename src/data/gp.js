@@ -1,4 +1,5 @@
 
+import ausgp from "../styling/assets/tracks/ausgp.png";
 
 // From https://ergast.com/api/f1/2020.json
 export const races = [
@@ -7,6 +8,8 @@ export const races = [
         round: "1",
         url: "https://en.wikipedia.org/wiki/2020_Australian_Grand_Prix",
         raceName: "Australian Grand Prix",
+        nameShort: "Australian GP",
+        trackImg: ausgp,
         Circuit: {
             circuitId: "albert_park",
             url: "http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit",
@@ -35,6 +38,8 @@ export const races = [
         round: "2",
         url: "https://en.wikipedia.org/wiki/2020_Bahrain_Grand_Prix",
         raceName: "Bahrain Grand Prix",
+        nameShort: "Bahrain GP",
+        trackImg: "https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit.png.transform/7col-retina/image.png",
         Circuit: {
             circuitId: "bahrain",
             url: "http://en.wikipedia.org/wiki/Bahrain_International_Circuit",
@@ -63,6 +68,7 @@ export const races = [
         round: "3",
         url: "https://en.wikipedia.org/wiki/2020_Vietnamese_Grand_Prix",
         raceName: "Vietnamese Grand Prix",
+        nameShort: "Vietnamese GP",
         Circuit: {
             circuitId: "hanoi",
             url: "http://en.wikipedia.org/wiki/Hanoi_Street_Circuit",
@@ -91,6 +97,7 @@ export const races = [
         round: "4",
         url: "https://en.wikipedia.org/wiki/2020_Chinese_Grand_Prix",
         raceName: "Chinese Grand Prix",
+        nameShort: "Chinese GP (DELAYED)",
         Circuit: {
             circuitId: "shanghai",
             url: "http://en.wikipedia.org/wiki/Shanghai_International_Circuit",
@@ -119,6 +126,7 @@ export const races = [
         round: "5",
         url: "https://en.wikipedia.org/wiki/2020_Dutch_Grand_Prix",
         raceName: "Dutch Grand Prix",
+        nameShort: "Dutch GP",
         Circuit: {
             circuitId: "zandvoort",
             url: "http://en.wikipedia.org/wiki/Circuit_Zandvoort",
@@ -147,6 +155,7 @@ export const races = [
         round: "6",
         url: "https://en.wikipedia.org/wiki/2020_Spanish_Grand_Prix",
         raceName: "Spanish Grand Prix",
+        nameShort: "Spanish GP",
         Circuit: {
             circuitId: "catalunya",
             url: "http://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya",
@@ -178,6 +187,7 @@ export const races = [
         round: "7",
         url: "https://en.wikipedia.org/wiki/2020_Monaco_Grand_Prix",
         raceName: "Monaco Grand Prix",
+        nameShort: "Monaco GP",
         Circuit: {
             circuitId: "monaco",
             url: "http://en.wikipedia.org/wiki/Circuit_de_Monaco",
@@ -206,6 +216,7 @@ export const races = [
         round: "8",
         url: "https://en.wikipedia.org/wiki/2020_Azerbaijan_Grand_Prix",
         raceName: "Azerbaijan Grand Prix",
+        nameShort: "Azerbaijan GP",
         Circuit: {
             circuitId: "BAK",
             url: "http://en.wikipedia.org/wiki/Baku_City_Circuit",
@@ -234,6 +245,7 @@ export const races = [
         round: "9",
         url: "https://en.wikipedia.org/wiki/2020_Canadian_Grand_Prix",
         raceName: "Canadian Grand Prix",
+        nameShort: "Canadian GP",
         Circuit: {
             circuitId: "villeneuve",
             url: "http://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve",
@@ -262,6 +274,7 @@ export const races = [
         round: "10",
         url: "https://en.wikipedia.org/wiki/2020_French_Grand_Prix",
         raceName: "French Grand Prix",
+        nameShort: "French GP",
         Circuit: {
             circuitId: "ricard",
             url: "http://en.wikipedia.org/wiki/Paul_Ricard_Circuit",
@@ -290,6 +303,7 @@ export const races = [
         round: "11",
         url: "https://en.wikipedia.org/wiki/2020_Austrian_Grand_Prix",
         raceName: "Austrian Grand Prix",
+        nameShort: "Austrian GP",
         Circuit: {
             circuitId: "red_bull_ring",
             url: "http://en.wikipedia.org/wiki/Red_Bull_Ring",
@@ -318,6 +332,7 @@ export const races = [
         round: "12",
         url: "https://en.wikipedia.org/wiki/2020_British_Grand_Prix",
         raceName: "British Grand Prix",
+        nameShort: "British GP",
         Circuit: {
             circuitId: "silverstone",
             url: "http://en.wikipedia.org/wiki/Silverstone_Circuit",
@@ -346,6 +361,7 @@ export const races = [
         round: "13",
         url: "https://en.wikipedia.org/wiki/2020_Hungarian_Grand_Prix",
         raceName: "Hungarian Grand Prix",
+        nameShort: "Hungarian GP",
         Circuit: {
             circuitId: "hungaroring",
             url: "http://en.wikipedia.org/wiki/Hungaroring",
@@ -374,6 +390,7 @@ export const races = [
         round: "14",
         url: "https://en.wikipedia.org/wiki/2020_Belgian_Grand_Prix",
         raceName: "Belgian Grand Prix",
+        nameShort: "Belgian GP",
         Circuit: {
             circuitId: "spa",
             url: "http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps",
@@ -402,6 +419,7 @@ export const races = [
         round: "15",
         url: "https://en.wikipedia.org/wiki/2020_Italian_Grand_Prix",
         raceName: "Italian Grand Prix",
+        nameShort: "Italian GP",
         Circuit: {
             circuitId: "monza",
             url: "http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza",
@@ -430,6 +448,7 @@ export const races = [
         round: "16",
         url: "https://en.wikipedia.org/wiki/2020_Singapore_Grand_Prix",
         raceName: "Singapore Grand Prix",
+        nameShort: "Singapore GP",
         Circuit: {
             circuitId: "marina_bay",
             url: "http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit",
@@ -458,6 +477,7 @@ export const races = [
         round: "17",
         url: "https://en.wikipedia.org/wiki/2020_Russian_Grand_Prix",
         raceName: "Russian Grand Prix",
+        nameShort: "Russian GP",
         Circuit: {
             circuitId: "sochi",
             url: "http://en.wikipedia.org/wiki/Sochi_Autodrom",
@@ -486,6 +506,7 @@ export const races = [
         round: "18",
         url: "https://en.wikipedia.org/wiki/2020_Japanese_Grand_Prix",
         raceName: "Japanese Grand Prix",
+        nameShort: "Japanese GP",
         Circuit: {
             circuitId: "suzuka",
             url: "http://en.wikipedia.org/wiki/Suzuka_Circuit",
@@ -514,6 +535,7 @@ export const races = [
         round: "19",
         url: "https://en.wikipedia.org/wiki/2020_United_States_Grand_Prix",
         raceName: "United States Grand Prix",
+        nameShort: "United States GP",
         Circuit: {
             circuitId: "americas",
             url: "http://en.wikipedia.org/wiki/Circuit_of_the_Americas",
@@ -542,6 +564,7 @@ export const races = [
         round: "20",
         url: "https://en.wikipedia.org/wiki/2020_Mexican_Grand_Prix",
         raceName: "Mexico City Grand Prix",
+        nameShort: "Mexico City GP",
         Circuit: {
             circuitId: "rodriguez",
             url:
@@ -571,6 +594,7 @@ export const races = [
         round: "21",
         url: "https://en.wikipedia.org/wiki/2020_Brazilian_Grand_Prix",
         raceName: "Brazilian Grand Prix",
+        nameShort: "Brazilian GP",
         Circuit: {
             circuitId: "interlagos",
             url:
@@ -600,6 +624,7 @@ export const races = [
         round: "22",
         url: "https://en.wikipedia.org/wiki/2020_Abu_Dhabi_Grand_Prix",
         raceName: "Abu Dhabi Grand Prix",
+        nameShort: "Abu Dhabi GP",
         Circuit: {
             circuitId: "yas_marina",
             url: "http://en.wikipedia.org/wiki/Yas_Marina_Circuit",
