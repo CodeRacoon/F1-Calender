@@ -12,11 +12,11 @@ const styling = theme => ({
     SubHeader___default: {
         color: theme.palette.text,
         textShadow:
-            "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1), -0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)"
+            "-0.03rem 0.03rem 0px rgba(0,0,0,0.9), 0.03rem -0.03rem 0px rgba(0,0,0,1), -0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)"
     },
     SubHeader___clickAnimation: {
         textShadow:
-            "-0.03rem 0.03rem 0px rgba(0,0,0,1), 0.03rem -0.03rem 0px rgba(0,0,0,1), -0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",
+            "-0.03rem 0.03rem 0px rgba(0,0,0,0.9), 0.03rem -0.03rem 0px rgba(0,0,0,1), -0.09rem 0.09rem 0px rgba(255,0,100,1), -0.18rem 0.18rem 0px rgba(0,255,200,1), -0.27rem 0.27rem 0px rgba(0,255,200,1)",
         animationName: "$retractShadow2",
         animationDuration: "0.5s",
         animationTimingFunction: "linear",
