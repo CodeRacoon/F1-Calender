@@ -23,7 +23,7 @@ const styling = theme => ({
     },
     Footer___rgbShadow: {
         color: "#fff",
-        boxShadow: "0.10rem 0.02rem 0px rgba(0,255,200,1), -0.10rem -0.02rem 0px rgba(255,0,100,1)",
+        boxShadow: "0.10rem 0.02rem 0px rgba(0,255,200,0.9), -0.10rem -0.02rem 0px rgba(255,0,100,0.9)",
     },
 
     
